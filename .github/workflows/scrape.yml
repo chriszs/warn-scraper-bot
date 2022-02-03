@@ -85,8 +85,8 @@ jobs:
         run: |-
           mkdir -p data/files || true
           mkdir -p data/logs || true
-          warn-scraper ${{ env.STATE }} --data-dir data --cache-dir data/files --log-level DEBUG &> data/logs/${{ env.STATE }}.log
-          cp /home/runner/.warn-scraper/logs/* /data/logs/ || true
+          warn-scraper ${{ env.STATE }} --data-dir data --cache-dir data/files --log-level DEBUG
+          cp .warn-scraper/logs/* data/logs/ || true
       - name: Commit and push
         env:
           STATE: ${{ matrix.state }}
