@@ -90,7 +90,7 @@ jobs:
           mkdir -p /home/runner/.warn-scraper/exports/ || true
           warn-scraper ${{ env.STATE }} --log-level DEBUG
           cp /home/runner/.warn-scraper/exports/* data/ || true
-          cp /home/runner/.warn-scraper/logs/* data/logs/
+          ! cp /home/runner/.warn-scraper/logs/* data/logs/
       - name: Commit and push
         env:
           STATE: ${{ matrix.state }}
