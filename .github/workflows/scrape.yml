@@ -15,7 +15,7 @@ jobs:
             AL,
             AK,
             AZ,
-            AR,
+            # AR,
             CA,
             CO,
             CT,
@@ -40,12 +40,12 @@ jobs:
             MT,
             NE,
             NV,
-            NH,
+            # NH,
             NJ,
             NM,
             NY,
             NC,
-            ND,
+            # ND,
             OH,
             OK,
             OR,
@@ -61,7 +61,7 @@ jobs:
             WA,
             WV,
             WI,
-            WY,
+            # WY,
           ]
 
     runs-on: ubuntu-latest
