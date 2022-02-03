@@ -87,7 +87,7 @@ jobs:
           mkdir -p data/files || true
           mkdir -p data/logs || true
           mkdir -p /home/runner/.warn-scraper/exports/ || true
-          rm "data/logs/"${{ env.STATE }}".log" || true
+          rm "data/logs/${{ env.STATE }}.log" || true
           warn-scraper ${{ env.STATE }} --cache-dir data/files --log-level DEBUG
           cp /home/runner/.warn-scraper/exports/* data/ || true
           ! cp /home/runner/.warn-scraper/logs/* data/logs/
