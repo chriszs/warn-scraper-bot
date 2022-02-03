@@ -69,7 +69,7 @@ jobs:
       - name: Checkout data
         uses: actions/checkout@v2
         with:
-          ref: data
+          ref: ${{ matrix.state }}
           path: data
       - name: Set up Python
         uses: actions/setup-python@v2
@@ -83,7 +83,10 @@ jobs:
         env:
           STATE: ${{ matrix.state }}
         run: |-
+          mkdir -p data/files || true
+          mkdir -p data/logs || true
           warn-scraper ${{ env.STATE }} --data-dir data --cache-dir data/files --log-level DEBUG &> data/logs/${{ env.STATE }}.log
+          cp /home/runner/.warn-scraper/logs/* /data/logs/ || true
       - name: Commit and push
         env:
           STATE: ${{ matrix.state }}
