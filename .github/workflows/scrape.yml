@@ -88,12 +88,13 @@ jobs:
           mkdir -p data/files || true
           mkdir -p data/logs || true
           mkdir -p /home/runner/.warn-scraper/exports/ || true
-          warn-scraper ${{ env.STATE }} --cache-dir data/files --log-level DEBUG
+          warn-scraper ${{ env.STATE }} --log-level DEBUG
           cp /home/runner/.warn-scraper/exports/* data/ || true
-          ! cp /home/runner/.warn-scraper/logs/* data/logs/
+          cp /home/runner/.warn-scraper/logs/* data/logs/
       - name: Commit and push
         env:
           STATE: ${{ matrix.state }}
+        if: always()
         run: |-
           cd ./data
           git config user.name "WARN scraper bot"
