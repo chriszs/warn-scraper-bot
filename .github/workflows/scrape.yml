@@ -43,7 +43,7 @@ jobs:
       - name: Checkout data
         uses: actions/checkout@v2
         with:
-          ref: ${{ matrix.state }}
+          ref: ${{ matrix.scraper }}
           path: data
       - id: install
         name: Install Python, pipenv and Pipfile packages
@@ -87,4 +87,4 @@ jobs:
           git add -A
           timestamp=$(date -u)
           git commit -m "${{ env.SCRAPER }} - ${timestamp}" || exit 0
-          git push
+          git push origin ${{ env.SCRAPER }}
