@@ -14,17 +14,13 @@ jobs:
     steps:
       - name: Checkout code
         uses: actions/checkout@v2
-      - id: install
-        name: Install Python, pipenv and Pipfile packages
-        uses: palewire/install-python-pipenv-pipfile@v2
+      - name: Install pipenv
+        run: pipx install pipenv
+      - uses: actions/setup-python@v2
         with:
-          python-version: 3.9
-      - uses: actions/cache@v1
-        with:
-          path: ~/.cache/pip
-          key: ${{ runner.os }}-pip-${{ hashFiles('**/Pipfile.lock') }}
-          restore-keys: |
-            ${{ runner.os }}-pip-
+          python-version: '3.9'
+          cache: 'pipenv'
+      - run: pipenv install
       - id: list
         name: List scrapers
         run: echo ::set-output name=scrapers::[\"$(pipenv run python cli.py --list | sed 's/,/","/g')\"]
@@ -45,17 +41,13 @@ jobs:
         with:
           ref: ${{ matrix.scraper }}
           path: data
-      - id: install
-        name: Install Python, pipenv and Pipfile packages
-        uses: palewire/install-python-pipenv-pipfile@v2
+      - name: Install pipenv
+        run: pipx install pipenv
+      - uses: actions/setup-python@v2
         with:
-          python-version: 3.9
-      - uses: actions/cache@v1
-        with:
-          path: ~/.cache/pip
-          key: ${{ runner.os }}-pip-${{ hashFiles('**/Pipfile.lock') }}
-          restore-keys: |
-            ${{ runner.os }}-pip-
+          python-version: '3.9'
+          cache: 'pipenv'
+      - run: pipenv install
       - name: Clear logs
         run: |
           rm -rf data/logs || true
