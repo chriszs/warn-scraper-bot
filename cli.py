@@ -42,6 +42,7 @@ def main(
     # In order to limit debug logging to our library
     logging.getLogger("urllib3").setLevel(logging.ERROR)
     logging.getLogger("pdfminer").setLevel(logging.WARNING)
+    logging.getLogger("vcr").setLevel(logging.INFO)
 
     # Local logging config
     logging.basicConfig(level=log_level, format="%(asctime)s - %(name)s - %(message)s")
