@@ -1,68 +1,25 @@
 name: Scrape
 
 on:
+  push:
   workflow_dispatch:
   schedule:
     - cron: "0 0 * * 0"
 
 jobs:
+  scrapers:
+    runs-on: ubuntu-latest
+    outputs:
+      matrix: ${{ steps.list.outputs.matrix }}
+    steps:
+    - id: list
+      run: echo "::set-output name=scrapers::[\"$(python cli.py --list | sed 's/,/","/g')\"]"
   scrape:
+    needs: scrapers
     strategy:
       fail-fast: false
       matrix:
-        state:
-          [
-            AL,
-            AK,
-            AZ,
-            # AR,
-            CA,
-            CO,
-            CT,
-            DE,
-            FL,
-            GA,
-            HI,
-            ID,
-            IL,
-            IN,
-            IA,
-            KS,
-            KY,
-            LA,
-            ME,
-            MD,
-            MA,
-            MI,
-            MN,
-            MS,
-            MO,
-            MT,
-            NE,
-            NV,
-            # NH,
-            NJ,
-            NM,
-            NY,
-            NC,
-            # ND,
-            OH,
-            OK,
-            OR,
-            PA,
-            RI,
-            SC,
-            SD,
-            TN,
-            TX,
-            UT,
-            VT,
-            VA,
-            WA,
-            WV,
-            WI,
-            # WY,
-          ]
+        scraper: ${{fromJson(needs.scrapers.outputs.scrapers)}}
 
     runs-on: ubuntu-latest
 
@@ -80,20 +37,29 @@ jobs:
         run: |
           python -m pip install --upgrade pip
           python -m pip install warn-scraper
-      - name: Run scrapers
-        env:
-          STATE: ${{ matrix.state }}
-        run: |-
+      - name: Clear logs
+        run: |
           rm -rf data/logs || true
-          mkdir -p data/files || true
           mkdir -p data/logs || true
-          mkdir -p /home/runner/.warn-scraper/exports/ || true
-          warn-scraper ${{ env.STATE }} --log-level DEBUG
-          cp /home/runner/.warn-scraper/exports/* data/ || true
+      - name: Replay scraping
+        if: ${{ github.event_name == 'push' }}
+        env:
+          SCRAPER: ${{ matrix.scrape }}
+          LOGLEVEL: DEBUG
+        run: |-
+          warn-scraper ${{ env.SCRAPER }} --log-level ${{ env.LOGLEVEL }}
+          ! cp /home/runner/.warn-scraper/logs/* data/logs/
+      - name: Live scrape
+        if: ${{ github.event_name != 'push' }}
+        env:
+          SCRAPER: ${{ matrix.scrape }}
+          LOGLEVEL: DEBUG
+        run: |-
+          warn-scraper ${{ env.SCRAPER }} --log-level ${{ env.LOGLEVEL }} --record-mode all
           ! cp /home/runner/.warn-scraper/logs/* data/logs/
       - name: Commit and push
         env:
-          STATE: ${{ matrix.state }}
+          SCRAPER: ${{ matrix.scraper }}
         if: always()
         run: |-
           cd ./data
@@ -101,5 +67,5 @@ jobs:
           git config user.email "actions@users.noreply.github.com"
           git add -A
           timestamp=$(date -u)
-          git commit -m "${{ env.STATE }} - ${timestamp}" || exit 0
+          git commit -m "${{ env.SCRAPER }} - ${timestamp}" || exit 0
           git push
