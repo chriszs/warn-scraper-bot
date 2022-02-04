@@ -12,8 +12,14 @@ jobs:
     outputs:
       matrix: ${{ steps.list.outputs.matrix }}
     steps:
-    - id: list
-      run: echo "::set-output name=scrapers::[\"$(python cli.py --list | sed 's/,/","/g')\"]"
+      - id: install
+        name: Install Python, pipenv and Pipfile packages
+        uses: palewire/install-python-pipenv-pipfile@v2
+        with:
+          python-version: 3.7
+      - id: list
+        name: List scrapers
+        run: echo "::set-output name=scrapers::[\"$(python cli.py --list | sed 's/,/","/g')\"]"
   scrape:
     needs: scrapers
     strategy:
@@ -29,10 +35,11 @@ jobs:
         with:
           ref: ${{ matrix.state }}
           path: data
-      - name: Set up Python
-        uses: actions/setup-python@v2
+      - id: install
+        name: Install Python, pipenv and Pipfile packages
+        uses: palewire/install-python-pipenv-pipfile@v2
         with:
-          python-version: "3.9"
+          python-version: 3.7
       - name: Install dependencies
         run: |
           python -m pip install --upgrade pip
