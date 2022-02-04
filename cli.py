@@ -48,7 +48,9 @@ def main(
 
     with vcr.use_cassette("data/cassettes/responses.yaml", record_mode=record_mode):
         runner = Runner(data_dir, cache_dir)
-        runner.scrape(scrapers[0])
+
+        for scrape in scrapers:
+            runner.scrape(scrape)
 
 
 if __name__ == "__main__":

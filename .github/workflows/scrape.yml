@@ -51,7 +51,7 @@ jobs:
       - name: Replay scraping
         if: ${{ github.event_name == 'push' }}
         env:
-          SCRAPER: ${{ matrix.scrape }}
+          SCRAPER: ${{ matrix.scraper }}
           LOGLEVEL: DEBUG
         run: |-
           pipenv run python cli.py ${{ env.SCRAPER }}
@@ -59,7 +59,7 @@ jobs:
       - name: Live scrape
         if: ${{ github.event_name != 'push' }}
         env:
-          SCRAPER: ${{ matrix.scrape }}
+          SCRAPER: ${{ matrix.scraper }}
           LOGLEVEL: DEBUG
         run: |-
           pipenv run python cli.py ${{ env.SCRAPER }} --record-mode all
