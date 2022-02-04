@@ -21,7 +21,7 @@ jobs:
           python-version: 3.9
       - id: list
         name: List scrapers
-        run: echo "::set-output name=scrapers::[\"$(pipenv run python cli.py --list | sed 's/,/","/g')\"]"
+        run: echo \"::set-output name=scrapers::[\"$(pipenv run python cli.py --list | sed 's/,/","/g')\"]\"
   scrape:
     needs: scrapers
     strategy:
