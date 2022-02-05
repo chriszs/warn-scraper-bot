@@ -1,0 +1,460 @@
+interactions:
+- request:
+    body: null
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      User-Agent:
+      - Big Local News (biglocalnews.org)
+    method: GET
+    uri: https://jobs.alaska.gov/RR/WARN_notices.htm
+  response:
+    body:
+      string: "\uFEFF<!doctype html>\r\n<html class=\"no-js\" lang=\"en\">\r\n\t<head>\r\n\t\t<!--
+        Global site tag (gtag.js) - Google Analytics --> <!-- jobs -->\r\n\t\t<script
+        async src=\"https://www.googletagmanager.com/gtag/js?id=UA-160671731-4\"></script>
+        \r\n\t\t<script src=\"/scripts/google_UA_160671731_4.js\"></script><meta charset=\"utf-8\">\r\n\t\t<meta
+        name=\"viewport\" content=\"width=device-width, initial-scale=1\">\r\n\t\t<title>WARN
+        notices</title>\t\r\n\t\t<meta name=\"description\" content=\"Division of
+        Employment and Training Services WARN Notices\">\r\n\t\t<style> \r\n td {
+        \r\n     vertical-align: top; \r\n } \r\n tr td:nth-child(1) { /* I don't
+        think they are 0 based */ \r\n    text-align: left; \r\n } \r\n tr td:nth-child(2)
+        { /* I don't think they are 0 based */ \r\n    text-align: right; \r\n } \r\n
+        tr td:nth-child(3) { /* I don't think they are 0 based */ \r\n    text-align:
+        right; \r\n } \r\n tr td:nth-child(4) { /* I don't think they are 0 based
+        */ \r\n    text-align: right; \r\n } \r\n tr td:nth-child(5) { /* I don't
+        think they are 0 based */ \r\n    text-align: center; \r\n }tr td:nth-child(6)
+        { /* I don't think they are 0 based */ \r\n    text-align: left; \r\n } \r\n
+        table{ \r\n width:100%; \r\n border:none; \r\n } \r\n td{ \r\n padding: 3px;
+        \r\n } \r\n </style> \r\n\r\n\t\t<link rel=\"stylesheet\" href=\"/assets/Govalaska.css\"
+        type=\"text/css\" >\r\n\t</head>\r\n\t<body class=\"WCAG page right-sidebar\">\r\n\r\n\t\t<div
+        class=\"background-wrap\"> <a class=\"visuallyhidden\" href=\"#main_content\">
+        Skip to content </a> <a class=\"back-to-top\" href=\"#\"> Back to Top </a>
+        \r\n\t\t\t<!-- begin top SOA menu -->\r\n\t\t\t<div id=\"required-greeting\">\r\n\t\t\t\t<p
+        class=\"visuallyhidden\"> The following is a greeting given in one of the
+        20 indigenous languages recognized by the State of Alaska. </p>\r\n\t\t\t\t<dl
+        id=\"language-greeting\">\r\n\t\t\t\t\t<dt class=\"greeting\"> <a class=\"language-link\"
+        href=\"https://www.commerce.alaska.gov/web/dcra/AKNativeLanguagePreservationAdvisoryCouncil/Languages.aspx\">
+        Ade' ndadz dengit'a? </a> </dt>\r\n\t\t\t\t\t<dd class=\"speaker\">\r\n\t\t\t\t\t\t<audio
+        id=\"deg-xinag\" src=\"https://webcontent.alaska.gov/style/soa/20180912/greetingAssets/deg-xinag.MP3\"
+        preload=\"auto\"> </audio>\r\n\t\t\t\t\t\t<button class=\"pronunciation\">
+        Listen to pronunciation </button>\r\n\t\t\t\t\t</dd>\r\n\t\t\t\t\t<dd class=\"language\">
+        (Deg Xinag) </dd>\r\n\t\t\t\t\t<dd class=\"translation\"> \"Hello, how are
+        you?\" </dd>\r\n\t\t\t\t</dl>\r\n\t\t\t</div>\r\n\t\t\t<!-- / required-greeting
+        -->\r\n\t\t\t<nav class=\"global-nav-menu\">\r\n\t\t\t\t<div class=\"inline-div\">\r\n\t\t\t\t\t<ul
+        id=\"menu-statewide-navigation\">\r\n\t\t\t\t\t\t<li> <a href=\"https://www.alaska.gov\">
+        State of Alaska </a> </li>\r\n\t\t\t\t\t\t<li> <a href=\"https://my.alaska.gov\">
+        myAlaska </a> </li>\r\n\t\t\t\t\t\t<li> <a href=\"https://www.alaska.gov/akdir1.html\">
+        Departments </a> </li>\r\n\t\t\t\t\t\t<li> <a href=\"https://www.alaska.gov/employeeHome.html\">
+        State Employees </a> </li>\r\n\t\t\t\t\t\t<li> <a href=\"#SOAfooterlinks\">
+        Statewide Links </a> </li>\r\n\t\t\t\t\t</ul>\r\n\t\t\t\t\t<!-- /menu-statewide-navigation
+        --> \r\n\t\t\t\t</div>\r\n\t\t\t\t<!-- /inline-div --> \r\n\t\t\t</nav>\r\n\t\t\t<!--
+        /global-nav-menu --> \r\n\t\t\t<!-- end top SOA menu --> <!-- begin top header
+        -->\r\n\t\t\t<div class=\"site-container\">\r\n\t\t\t\t<!-- Agency Header
+        -->\r\n\t\t\t\t<header class=\"site-header\">\r\n\t\t\t\t\t<div class=\"wrap\">\r\n\t\t\t\t\t\t<div
+        class=\"site-logo\">\r\n\t\t\t\t\t\t\t <a href=\"https://www.alaska.gov\">
+        \r\n\t\t\t\t\t\t\t\t<img src=\"/img/state_seal_color-01.png\" alt=\"State
+        of Alaska logo\" />\r\n\t\t\t\t\t\t\t </a>\r\n\t\t\t\t\t\t</div>\r\n\t\t\t\t\t\t<div
+        class=\"title-area\">\r\n\t\t\t\t\t\t\t<div class=\"wrap\">\r\n\t\t\t\t\t\t\t\t<div
+        class=\"soa-link\">\r\n\t\t\t\t\t\t\t\t\t<a href=\"https://labor.alaska.gov/\">\r\n\t\t\t\t\t\t\t\t\t\t<span
+        class=\"site-title\">Department of Labor and Workforce Development</span>\r\n\t\t\t\t\t\t\t\t\t</a>\r\n\t\t\t\t\t\t\t\t</div>\r\n\t\t\t\t\t\t\t\t<div
+        id=\"search-form\">\r\n\t\t\t\t\t\t\t\t\t<div class=\"wrap\">\r\n\t\t\t\t\t\t\t\t\t\t<div
+        class=\"search-form\">\r\n\t\t\t\t\t\t\t\t\t\t\t<form class=\"search-soa\"
+        action=\"/search.htm\" method=\"get\" name=\"gs\">\r\n\t\t\t\t\t\t\t\t\t\t\t\t<div
+        role=\"search\">\r\n\t\t\t\t\t\t\t\t\t\t\t\t\t<input id=\"search-field-big\"
+        title=\"Search\" name=\"q\" type=\"search\" aria-labelledby=\"search-button\"
+        \ />\r\n\t\t\t\t\t\t\t\t\t\t\t\t\t<button id=\"search-button\" name=\"submit\"
+        type=\"submit\"> Search </button>\r\n\t\t\t\t\t\t\t\t\t\t\t\t</div>\r\n\t\t\t\t\t\t\t\t\t\t\t</form>\r\n\t\t\t\t\t\t\t\t\t\t</div>\r\n\t\t\t\t\t\t\t\t\t</div>\r\n\t\t\t\t\t\t\t\t</div><!--
+        search-form -->\r\n\t\t\t\t\t\t\t\t<div id=\"search_icon_placeholder\"> &nbsp;
+        </div>\r\n\t\t\t\t\t\t\t</div><!-- wrap -->\r\n\t\t\t\t\t\t\t<div class=\"title-text\">\t\r\n\t\t\t\t\t\t\t\t<span
+        class=\"site-description\">Division of Employment and Training Services</span>\r\n\t\t\t\t\t\t\t</div><!--
+        title-text -->\r\n\t\t\t\t\t\t</div><!-- title-area -->\r\n\t\t\t\t\t</div><!--
+        wrap -->\r\n\t\t\t\t\t<!-- / site-header wrap --> \r\n\t\t\t\t</header><!--
+        /site-header --> \r\n\t\t\t\t<!-- Agency Navigation -->\r\n\t\t\t\t<nav class=\"agency-navigation\">
+        \r\n <div class=\"wrap\"> \r\n <ul id=\"agency-navigation-menu\" class=\"agency-responsive-menu
+        responsive-menu\"> \r\n <li class=\"menu-item\"><a href=\"https://labor.alaska.gov/dets/home.htm\">Home</a></li>
+        \r\n          \r\n <li class=\"menu-item menu-item-has-children\"><a href=\"https://jobs.alaska.gov/employer.htm\">Employer</a>
+        \r\n <ul class=\"sub-menu\"> \r\n <li class=\"menu-item menu-item-has-children\"><h5>&nbsp;
+        Recruitment</h5></li> \r\n  \r\n <li class=\"menu-item\"><a href=\"https://alaska.statevirtualjobfair.com/\">Virtual
+        Job Fair Request</a></li> \r\n <li class=\"menu-item\"><a href=\"https://jobs.alaska.gov/apprentice/\">Registered
+        Apprenticeships</a></li> \r\n <li class=\"menu-item\"><a href=\"https://jobs.alaska.gov/employer.htm\">Business
+        Connection</a></li> \r\n <li class=\"menu-item\"><h5>&nbsp; Hiring Incentives</h5></li>
+        \r\n <li class=\"menu-item\"><a href=\"https://labor.alaska.gov/bonding/\">Fidelity
+        Bonding Program</a></li>         \r\n <li class=\"menu-item\"><a href=\"https://jobs.alaska.gov/forms/OjtIntro-employer.html\">On-the-Job
+        Training Assistance</a></li> \r\n <li class=\"menu-item\"><a href=\"https://jobs.alaska.gov/wotc.htm\">Work
+        Opportunity Tax Credit</a></li> \r\n <li class=\"menu-item\"><a href=\"https://jobs.alaska.gov/veterans/employer/veteran-tax-credits.pdf\">
+        &nbsp; - Veteran Tax Credits - WOTC  (PDF)</a></li> \r\n <li class=\"menu-item\"><h5>&nbsp;
+        Worker Layoffs</h5></li> \r\n <li class=\"menu-item\"><a href=\"https://jobs.alaska.gov/RR/index.htm\">Rapid
+        Response Assistance</a></li>         \r\n <li class=\"menu-item\"><a href=\"https://jobs.alaska.gov/RR/questions.htm\">Frequently
+        Asked Questions</a></li> \r\n <li class=\"menu-item\"><a href=\"https://jobs.alaska.gov/RR/rrteam.htm\">Contact
+        Rapid Response Team </a></li> \r\n </ul> \r\n </li> \r\n  \r\n <li class=\"menu-item
+        menu-item-has-children\"><a href=\"https://jobs.alaska.gov/jobseek/\">Job
+        seeker/worker</a> \r\n   <ul class=\"sub-menu\"> \r\n     <li class=\"menu-item\">
+        \r\n       <h5>&nbsp; Job Search</h5> \r\n     </li> \r\n     <li class=\"menu-item\"><a
+        href=\"https://jobs.alaska.gov/index.html\">Alaska Job Center Network</a></li>
+        \r\n     <li class=\"menu-item\"><a href=\"https://alaskajobs.alaska.gov/\">AlaskaJobs
+        website</a></li> \r\n     <li class=\"menu-item\"><a href=\"https://jobs.alaska.gov/offices/index.html\">Job
+        centers </a></li> \r\n     <li class=\"menu-item\"><a href=\"https://jobs.alaska.gov/jobfairs/virtual.html\">Virtual
+        Job Fairs</a></li> \r\n <li class=\"menu-item\"><a href=\"http://www.jobs.alaska.gov/jobfairs/\">Job
+        fairs and recruitments</a></li> \r\n  \r\n     <li class=\"menu-item\"><a
+        href=\"https://labor.alaska.gov/bonding/\">Jobs after incarceration</a></li>
+        \r\n     <li class=\"menu-item\"><a href=\"http://doa.alaska.gov/dop/workplace/\">Jobs
+        with the State of Alaska</a></li> \r\n     <li class=\"menu-item\"><a href=\"https://jobs.alaska.gov/apprentice/\">Registered
+        Apprenticeship</a></li> \r\n     <li class=\"menu-item\"><a href=\"https://jobs.alaska.gov/veterans/\">Veteran
+        Services</a></li> \r\n   </ul> \r\n </li> \r\n  \r\n <li class=\"menu-item
+        menu-item-has-children\"><a href=\"#\">Grants</a> \r\n <ul class=\"sub-menu\">
+        \r\n <li class=\"menu-item\"><a href=\"https://aws.state.ak.us/OnlinePublicNotices/default.aspx\">Alaska
+        Online Public Notices</a></li> \r\n <li class=\"menu-item\"><a href=\"https://egrams.dol.alaska.gov/egrams/user/home.aspx\">EGrAMS
+        Grant Management</a></li> \r\n          \r\n <li class=\"menu-item\"><a href=\"https://awib.alaska.gov/training-programs/youth_grantee_resources.htm\">Youth
+        Grant Resources</a></li> \r\n </ul> \r\n </li> \r\n  \r\n <li class=\"menu-item
+        menu-item-has-children\"><a href=\"#\">Training/Education</a> \r\n <ul class=\"sub-menu\">
+        \r\n <li class=\"menu-item\"><a href=\"https://jobs.alaska.gov/aae/\">Alaska
+        Adult Education (AAE)</a></li> \r\n <li class=\"menu-item\"><a href=\"https://labor.alaska.gov/dets/aca.htm\">Alaska
+        Construction Academies (ACA) </a></li> \r\n <li class=\"menu-item\"><a href=\"https://labor.alaska.gov/dets/tvep.htm\">Alaska
+        Technical Vocational Employment Program (TVEP) </a></li>  \r\n <li class=\"menu-item\"><a
+        href=\"https://labor.alaska.gov/dets/step.htm\">State Training &amp; Employment
+        Program (STEP)</a></li> \r\n  \r\n <li class=\"menu-item\"><a href=\"https://labor.alaska.gov/masst/contact.htm\">Mature
+        Alaskans Seeking Skills Training (MASST) </a></li> \r\n <li class=\"menu-item\"><a
+        href=\"https://jobs.alaska.gov/apprentice/\">Registered Apprenticeship</a></li>
+        \r\n <li class=\"menu-item\"><a href=\"https://labor.alaska.gov/dvr/\">Vocational
+        Rehabilitation</a></li>         \r\n <li class=\"menu-item\"><a href=\"https://labor.alaska.gov/dets/wioa_adult.htm\">WIOA
+        Adult</a></li> \r\n <li class=\"menu-item\"><a href=\"https://labor.alaska.gov/dets/wioa_dislocated.htm\">WIOA
+        Dislocated Worker </a></li> \r\n <li class=\"menu-item\"><a href=\"https://labor.alaska.gov/dets/iwtp.htm\">WIOA
+        Incumbent Worker </a></li> \r\n <li class=\"menu-item\"><a href=\"https://labor.alaska.gov/dets/etpl.htm\">WIOA
+        Eligible Training Providers</a></li>         \r\n <li class=\"menu-item\"><a
+        href=\"https://labor.alaska.gov/dets/wioa_youth.htm\">WIOA Youth</a></li>
+        <li class=\"menu-item\"><a href=\"https://jobs.alaska.gov/taa/\">Trade Adjustment
+        Assistance (TAA)</a></li> \r\n </ul> \r\n </li> \r\n  \r\n <li class=\"menu-item
+        menu-item-has-children\"><a href=\"https://labor.alaska.gov/unemployment/\">Unemployment</a>
+        \r\n <ul class=\"sub-menu\"> \r\n <li class=\"menu-item\"><a href=\"https://my.alaska.gov/PrerequisiteProcess?pubid=bif\">Apply
+        for Unemployment Insurance</a></li> \r\n <li class=\"menu-item\"><a href=\"https://labor.alaska.gov/unemployment/ui-bpm.htm\">Benefit
+        Policy Manual</a></li> \r\n <li class=\"menu-item\"><a href=\"https://labor.alaska.gov/unemployment/bpc.htm\">Benefit
+        Payment Control Unit</a></li> \r\n <li class=\"menu-item\"><a href=\"https://labor.alaska.gov/unemployment/call-centers.htm\">UI
+        Claim Assistance</a></li> \r\n <li class=\"menu-item\"><a href=\"https://labor.alaska.gov/unemployment/fraud.htm\">UI
+        Fraud</a></li> \r\n </ul> \r\n </li> \r\n  \r\n <li class=\"menu-item menu-item-has-children\"><a
+        href=\"#\">Staff</a> \r\n <ul class=\"sub-menu\"> \r\n <li class=\"menu-item\"><a
+        href=\"https://alder.state.ak.us/BOE/BI/\">ALDER Login</a></li> \r\n <li class=\"menu-item\"><a
+        href=\"http://intranet.labor.ak/DETS_Today/\">DETS Resource Page </a></li>
+        \r\n <li class=\"menu-item\"><a href=\"https://egrams.dol.alaska.gov/egrams/user/home.aspx\">EGrAMS
+        Login </a></li> \r\n  \r\n <li class=\"menu-item\"><a href=\"https://iris-adv.alaska.gov:1443/webapp/PRDFIN1X1/Advantage\">IRIS
+        Login </a></li> \r\n <li class=\"menu-item\"><a href=\"https://labor.alaska.gov/esd/partner-agreements.htm\">Partner
+        Agreements </a></li> \r\n <li class=\"menu-item\"><a href=\"http://alaska.gov/whitepages/\">State
+        Employee Directory </a></li> \r\n <li class=\"menu-item\"><a href=\"http://doa.alaska.gov/dop/forEmployees/\">Human
+        Resources </a></li> \r\n </ul> \r\n </li> \r\n  \r\n  \r\n          \r\n </ul>
+        \r\n </div> \r\n </nav> \r\n\t\t\t\t<!-- /agency-navigation --> \r\n\t\t\t\t<div
+        class=\"site-inner\">\r\n\t\t\t\t\t<div > <a id=\"TOC\"> </a></div>\r\n\t\t\t\t
+        \ <main class=\"content\">\r\n\t\t\t\t\t  <a id=\"main_content\"> </a>\r\n\t\t\t\t\t
+        \ <!-- https://www.w3.org/TR/wai-aria-practices-1.1/examples/breadcrumb/index.html
+        -->\r\n\t\t\t\t\t\t<nav id=\"breadcrumbs\" class=\"breadcrumb\" aria-label=\"Breadcrumb\"
+        >\r\n\t\t\t\t\t\t\t<ol>\r\n\t\t\t\t\t\t\t  <li><a class=\"context\" href=\"https://alaska.gov/\">
+        State of Alaska </a></li> \r\n\t\t\t\t\t\t\t  <li><a class=\"context\" href=\"https://labor.alaska.gov/\">
+        DOLWD </a></li>  \r\n\t\t\t\t\t\t\t<li><a href=\"https://labor.alaska.gov/dets/\"
+        class=\"context\">Employment and Training Services</a></li>\r\n\t\t\t\t\t\t\t
+        \ <li><a  aria-current=\"page\"> WARN notices filed</a> </li>\r\n\t\t\t\t\t\t\t</ol>\r\n\t\t\t\t\t\t</nav>\r\n\t\t\t\t\t<!--
+        Begin main content -->\r\n\t\t\t\t\t<article>\r\n\t\t\t\t\t<h1>WARN Notices
+        Filed</h1>\r\n\t\t\t\t\t<table>\r\n<tbody> \r\n <tr style=\"vertical-align:
+        bottom;\"> \r\n <td style=\"vertical-align: bottom;\">Company</td> \r\n <td
+        style=\"vertical-align: bottom;\">Location</td> \r\n <td style=\"vertical-align:
+        bottom;\">Notice Date</td> \r\n <td style=\"vertical-align: bottom;\">Layoff
+        Date</td> \r\n <td style=\"vertical-align: bottom;\">Employees Affected</td>
+        \r\n <td style=\"vertical-align: bottom;\">Notes</td> \r\n </tr> \r\n <tr>
+        \r\n <td colspan=\"6\"><hr/></td> \r\n </tr> \r\n         <!-- \r\n <tr> \r\n
+        <td><a href=\"/RR/notices/\">Name</a></td> \r\n <td >Location</td> \r\n <td
+        >Notice_Date</td> \r\n <td >Layoff_Date</td> \r\n <td >Num_Employees</td>
+        \r\n <td>Notes</td> \r\n </tr> \r\n         --> \r\n <tr> \r\n <td><a href=\"/RR/notices/Beans_Cafe_WARN_Notice_Recd_email_9-16-21.pdf\">Bean\u2019s
+        Cafe</a></td> \r\n <td >Anchorage</td> \r\n <td >9/16/21</td> \r\n <td >9/15/21</td>
+        \r\n <td >40</td> \r\n <td>Loss of contract</td> \r\n </tr> \r\n    <tr> \r\n
+        <td><a href=\"/RR/notices/Kakivik_WARN_Letter_to_RR_Coordinators.pdf\">Kakivik
+        Asset Mgmt</a></td> \r\n <td >Prudhoe Bay</td> \r\n <td >7/2/21</td> \r\n
+        <td >8/31/21</td> \r\n <td >134</td> \r\n <td>Loss of Contract</td> \r\n </tr>
+        \r\n  <tr> \r\n <td><a href=\"/RR/notices/First_Student_WARN_Notice_4-30-21.pdf\">First
+        Student</a></td> \r\n <td >Fairbanks, North Pole</td> \r\n <td >4/30/21</td>
+        \r\n <td >6/30/21</td> \r\n <td >185</td> \r\n <td>Loss of contract</td> \r\n
+        </tr>   \r\n <tr> \r\n <td><a href=\"/RR/notices/GCI_WARN Notice_4-12-21.pdf\">GCI
+        Communication Group</a></td> \r\n <td >Anchorage</td> \r\n <td >4/12/21</td>
+        \r\n <td >August-November 2021</td> \r\n <td >59</td> \r\n <td>Business need
+        changes/reorganization;\r\npermanent\r\n</td> \r\n </tr> \r\n <tr> \r\n <td><a
+        href=\"/RR/notices/RavnAir_Group_Postmked_9-30-20_lttr_dted_8-7-20.pdf\">RavnAir
+        Group, Corvus Airlines, Hageland Aviation Services and Peninsula Aviation
+        Services</a></td> \r\n <td >Anchorage and 20 smaller Alaska communities, plus
+        Boston, Mass.</td> \r\n <td >9/30/20*</td> \r\n <td >8/7/20</td> \r\n <td
+        >1,234</td> \r\n <td>COVID-19; permanent</td> \r\n </tr> \r\n         <tr>
+        \r\n <td><a href=\"/RR/notices/WARN_HMSHost_Anchorage_8-12-20.pdf\">HMSHost
+        &ndash; Ted Stevens Anchorage International Airport restaurants: Starbucks,
+        Humpy\u2019s Great Alaskan Alehouse, Norton Sound Seafood House, Cinnabon,
+        Alaska Doghaus, Cream, Upper One Restaurant/Lounge, Mezzanine Bar, Anchorage
+        Marketplace and Local Alaska Rustic Marketplace</a></td> \r\n <td >Anchorage</td>
+        \r\n <td >8/12/20</td> \r\n <td >10/15/20</td> \r\n <td >123</td> \r\n <td>COVID-19;
+        permanent</td> \r\n         </tr> \r\n <tr> \r\n <td><a href=\"/RR/notices/WARN_HMSHost_Fairbanks_8-12-20.pdf\">HMSHost
+        &ndash; Fairbanks International Airport restaurants: The Local and Starbucks</a></td>
+        \r\n <td >Fairbanks</td> \r\n <td >8/12/20</td> \r\n <td >10/15/20</td> \r\n
+        <td >19</td> \r\n <td>COVID-19; permanent</td> \r\n </tr> \r\n <tr> \r\n <td><a
+        href=\"/RR/notices/Chenega_7-31-20.pdf\">Chenega Security and Support Solutions
+        LLC</a></td> \r\n <td >Shemya Island</td> \r\n <td >7/31/20</td> \r\n <td
+        >9/30/20</td> \r\n <td >64</td> \r\n <td></td> \r\n </tr> \r\n <tr> \r\n <td><a
+        href=\"/RR/notices/AK_Air_WARN_recd_7-31-20.pdf\">Alaska Airlines</a></td>
+        \r\n <td >Anchorage</td> \r\n <td >7/31/20</td> \r\n <td >10/1/20</td> \r\n
+        <td >331</td> \r\n <td>Permanent</td> \r\n </tr> \r\n         <tr> \r\n <td><a
+        href=\"/RR/notices/Westmark_Hotels_Denali_Princess_Lodge_et_al_5-19-20.pdf\">Holland
+        America Group,<br> \r\n     Carnival UK,<br> \r\n     Westmark Hotels, Inc.,<br>
+        \r\n     Tour Alaska, Inc.,<br> \r\n     Royal Hyway Tours, Inc.,<br> \r\n
+        \    Anchorage Westmark Hotel,<br> \r\n     Escorted Tour Operations,<br>
+        \r\n     Anchorage Transportation,<br> \r\n     Anchorage Rail Division,<br>
+        \r\n     Fairbanks Westmark Hotel,<br> \r\n     Fairbanks Transportation,<br>
+        \r\n     Westmark McKinley Chalet Resort,<br> \r\n     Denali Princess Wilderness
+        Lodge,<br> \r\n     Denali Transportation Division,<br> Healy Homestead</a></td>
+        \r\n <td ><p>Anchorage,<br> \r\n   Fairbanks,<br> \r\n   Denali National Park
+        \ and<br> \r\n   Healy</p></td> \r\n <td >5/19/20</td> \r\n <td >6/1/20</td>
+        \r\n <td >149</td> \r\n <td>COVID-19; temporary</td> \r\n </tr> \r\n  \r\n
+        <tr> \r\n <td><a href=\"/RR/notices/Doyon_Drilling_WARN_5-1-20_No_2_304_total.pdf\">
+        Doyon Drilling Inc.</a></td> \r\n <td >North Slope</td> \r\n <td >5/1/20</td>
+        \r\n <td >4/7/20 to 5/31/20</td> \r\n <td >304</td> \r\n <td>COVID-19; permanent</td>
+        \r\n </tr> \r\n  \r\n <tr> \r\n <td><a href=\"/RR/notices/Yukon_Kuskokwim_Health_Corp_4-28-20.pdf\">Yukon-Kuskokwim
+        Health Corporation</a></td> \r\n <td >Bethel and other Y-K Delta communities</td>
+        \r\n <td >4/28/20</td> \r\n <td >4/29/20 to 5/31/20</td> \r\n <td >Up to 300</td>
+        \r\n <td>COVID-19; permanent</td> \r\n </tr> \r\n  \r\n <tr> \r\n <td><a href=\"/RR/notices/Hard_Rock_Cafe_WARN_4-27-20.pdf\">Hard
+        Rock Cafe International STP</a></td> \r\n <td >Anchorage</td> \r\n <td >4/27/20</td>
+        \r\n <td >4/13/20 to 4/27/20</td> \r\n <td >54</td> \r\n <td>COVID-19; temporary</td>
+        \r\n </tr> \r\n  \r\n  \r\n <tr> \r\n <td><a href=\"/RR/notices/Baker_Hughes_WARN_4-27-20.pdf\">Baker
+        Hughes</a></td> \r\n <td >North Slope</td> \r\n <td >4/27/20</td> \r\n <td
+        >4/28/20 to 5/11/20</td> \r\n <td >63</td> \r\n <td>COVID-19</td> \r\n </tr>
+        \r\n <tr> \r\n <td><a href=\"/RR/notices/WARN_Schlumberger_fr_FBorowski_Amend_6-22-20.pdf\">Schlumberger
+        Technology Corp.</a></td> \r\n <td >North Slope</td> \r\n <td >4/22/20</td>
+        \r\n <td >4/22/20 to June 2020</td> \r\n <td >129</td> \r\n <td>COVID-19</td>
+        \r\n </tr> \r\n <tr> \r\n <td><a href=\"/RR/notices/Halliburton_Energy_Services_WARN_4-20-20_5-5-20.pdf\">Halliburton
+        Energy Services</a></td> \r\n <td >Prudhoe Bay</td> \r\n <td >4/20/20</td>
+        \r\n <td >4/20/20</td> \r\n <td >80</td> \r\n <td>&nbsp;</td> \r\n </tr> \r\n
+        <tr> \r\n <td><a href=\"/RR/notices/Crush_Bistro_4-2-20.pdf\">Crush Bistro</a></td>
+        \r\n <td >Anchorage</td> \r\n <td >4/2/20</td> \r\n <td >4/17/20</td> \r\n
+        <td >24</td> \r\n <td>COVID-19</td> \r\n </tr> \r\n <tr> \r\n <td><a href=\"/RR/notices/South_Restaurant_Coffee_House_4-2-20.pdf\">South
+        Restaurant &amp; Coffeehouse</a></td> \r\n <td >Anchorage</td> \r\n <td >4/2/20</td>
+        \r\n <td >4/17/20</td> \r\n <td >82</td> \r\n <td>COVID-19</td> \r\n </tr>
+        \r\n <tr> \r\n <td><a href=\"/RR/notices/Snow_City_Cafe_4-2-20.pdf\">Snow
+        City Caf&eacute;</a></td> \r\n <td >Anchorage</td> \r\n <td >4/2/20</td> \r\n
+        <td >4/17/20</td> \r\n <td >37</td> \r\n <td>COVID-19</td> \r\n </tr> \r\n
+        <tr> \r\n <td><a href=\"/RR/notices/Benihana_Anchorage_4-2-20.PDF\">Benihana</a></td>
+        \r\n <td >Anchorage</td> \r\n <td >4/2/20</td> \r\n <td >4/16/20</td> \r\n
+        <td >68</td> \r\n <td>COVID-19</td> \r\n </tr> \r\n <tr> \r\n <td><a href=\"/RR/notices/Peak_Oilfield_Services_WARN_4-1-20_and_3-30.pdf\">Peak
+        Oilfield Services</a></td> \r\n <td >North Slope, Kenai Peninsula, And Valdez</td>
+        \r\n <td >4/1/20</td> \r\n <td >4/1/20 5/31/20</td> \r\n <td >161</td> \r\n
+        <td>COVID-19</td> \r\n </tr> \r\n <tr> \r\n <td><a href=\"/RR/notices/Spenard_Roadhouse_4-1-20.pdf\">Spenard
+        Roadhouse</a></td> \r\n <td >Anchorage</td> \r\n <td >4/1/20</td> \r\n <td
+        >4/17/20</td> \r\n <td >77</td> \r\n <td>COVID-19</td> \r\n </tr> \r\n <tr>
+        \r\n <td><a href=\"/RR/notices/Westmark_Anchorage_WARN_wo_names_w_ee_lttr_3-25-20.pdf\">Westmark
+        Anchorage</a></td> \r\n <td >Anchorage</td> \r\n <td >3/25/20</td> \r\n <td
+        >3/25/20</td> \r\n <td >37</td> \r\n <td>COVID-19; temporary</td> \r\n </tr>
+        \r\n  \r\n  \r\n  \r\n <tr> \r\n <td><a href=\"/RR/notices/Alsco_WARN_and_attchmt_3-25-20.pdf\">Alsco</a></td>
+        \r\n <td >Anchorage</td> \r\n <td >3/25/20</td> \r\n <td >3/25/20</td> \r\n
+        <td >21</td> \r\n <td>COVID-19; temporary</td> \r\n </tr> \r\n  \r\n  \r\n
+        <tr> \r\n <td><a href=\"/RR/notices/Alyeska_Resort_WARN_3-24-20.pdf\">Alyeska
+        Resort</a></td> \r\n <td >Girdwood</td> \r\n <td >3/18/20</td> \r\n <td >3/19/20</td>
+        \r\n <td >616</td> \r\n <td>COVID-19</td> \r\n </tr> \r\n <tr> \r\n <td><a
+        href=\"/RR/notices/BP_WARN_North_Slope.pdf\">British Petroleum</a></td> \r\n
+        <td >North Slope</td> \r\n <td >12/19/19</td> \r\n <td >2/20/20</td> \r\n
+        <td >345</td> \r\n <td>Sale of business</td> \r\n </tr> \r\n <tr> \r\n <td><a
+        href=\"/RR/notices/BP_WARN_Anchorage.pdf\">British Petroleum</a></td> \r\n
+        <td >Anchorage</td> \r\n <td >12/19/19</td> \r\n <td >2/20/20</td> \r\n <td
+        >287</td> \r\n <td>Sale of business</td> \r\n </tr> \r\n <tr> \r\n <td><a
+        href=\"/RR/notices/AECOM_Eielson_AFB_Nov.2019.pdf\">AECOM</a></td> \r\n <td
+        >Eielson AFB</td> \r\n <td >12/6/19</td> \r\n <td >1/4/20</td> \r\n <td >160</td>
+        \r\n <td>End of contract</td> \r\n </tr> \r\n <tr> \r\n <td><a href=\"/RR/notices/Nordstrom_Anchorage_7.19.pdf\">Nordstrom
+        Anchorage</a></td> \r\n <td >Anchorage</td> \r\n <td >6/26/19</td> \r\n <td
+        >09/13/19</td> \r\n <td >173</td> \r\n <td>Store closure</td> \r\n </tr> \r\n
+        <tr> \r\n <td>Aleut O&amp;M Services, LLC</td> \r\n <td >Clear, AK</td> \r\n
+        <td >7/2/18</td> \r\n <td >8/31/18</td> \r\n <td >74</td> \r\n <td>Loss of
+        contract</td> \r\n </tr> \r\n <tr> \r\n <td>BAE Systems</td> \r\n <td >Clear,
+        AK</td> \r\n <td >6/25/18</td> \r\n <td >8/31/18</td> \r\n <td >101</td> \r\n
+        <td>Loss of contract</td> \r\n </tr> \r\n <tr> \r\n <td><a href=\"/RR/notices/Mistras_Group_Inc._1.18.pdf\">Mistras
+        Group, Inc. and subsidiary Quality Services Laboratories Inc.</a></td> \r\n
+        <td >Prudhoe Bay/ <br /> Anchorage</td> \r\n <td >1/23/18</td> \r\n <td >3/31/18</td>
+        \r\n <td >261</td> \r\n <td>Loss of contract</td> \r\n </tr> \r\n <tr> \r\n
+        <td><a href=\"/RR/notices/Sams_Club_Fairbanks_WARN_1-11-18.pdf\">Sam&rsquo;s
+        Club</a></td> \r\n <td >Fairbanks</td> \r\n <td >1/11/18</td> \r\n <td >Starting
+        <br /> 3/16/18</td> \r\n <td >177</td> \r\n <td>Store closure</td> \r\n </tr>
+        \r\n <tr> \r\n <td><a href=\"/RR/notices/Sams_Club_Anchorage_on_Muldoon_WARN_1-11-18.pdf\">Sam&rsquo;s
+        Club</a></td> \r\n <td >Anchorage on Muldoon Road</td> \r\n <td >1/11/18</td>
+        \r\n <td >Starting <br /> 3/16/18</td> \r\n <td >167</td> \r\n <td>Store closure</td>
+        \r\n </tr> \r\n <tr> \r\n <td><a href=\"/RR/notices/Sams_Club_Anchorage_on_Old_Seward_WARN_1-11-18.pdf\">Sam&rsquo;s
+        Club</a></td> \r\n <td >Anchorage on Old Seward Hwy.</td> \r\n <td >1/11/18</td>
+        \r\n <td >Starting <br /> 3/16/18</td> \r\n <td >181</td> \r\n <td>Store closure</td>
+        \r\n </tr> \r\n <tr> \r\n <td><a href=\"/RR/notices/Sears_Holdings.pdf\">Sears
+        Holdings</a></td> \r\n <td >Anchorage</td> \r\n <td >1/4/18</td> \r\n <td
+        > \r\n Starting <br /> 4/8/18 \r\n </td> \r\n <td >67</td> \r\n <td>Store
+        closure</td> \r\n </tr> \r\n <tr> \r\n <td><a href=\"/RR/notices/Kodiak_Support_Services.pdf\">Kodiak
+        Support Services, JV</a></td> \r\n <td >Kodiak</td> \r\n <td >11/30/17</td>
+        \r\n <td >12/31/17</td> \r\n <td >125</td> \r\n <td>Loss of contract</td>
+        \r\n </tr> \r\n <tr> \r\n <td><a href=\"/RR/notices/ASRC_Energy_Services_11-28-17.pdf\">ASRC
+        Energy Services</a></td> \r\n <td >Milne, Endicott, and Northstar <br /> on
+        the North Slope</td> \r\n <td >11/28/17</td> \r\n <td >12/18/17 to 12/31/17</td>
+        \r\n <td >92</td> \r\n <td>Services terminated</td> \r\n </tr> \r\n <tr> \r\n
+        <td><a href=\"/RR/notices/Norcon_Warn_05.2017.pdf\">Norcon</a></td> \r\n <td
+        >North Slope</td> \r\n <td >5/12/17</td> \r\n <td >Varied</td> \r\n <td >147</td>
+        \r\n <td>Loss of contract</td> \r\n </tr> \r\n <tr> \r\n <td><a href=\"/RR/notices/First_Student_WARN_4-19-17.pdf\">First
+        Student</a></td> \r\n <td >Soldotna, <br /> Homer &amp; Seward</td> \r\n <td
+        >4/19/17</td> \r\n <td >6/30/17</td> \r\n <td >149</td> \r\n <td>Loss of contract</td>
+        \r\n </tr> \r\n <tr> \r\n <td><a href=\"/RR/notices/Parker_Drilling_03.16.pdf\">Parker
+        Drilling</a></td> \r\n <td >Anchorage/ <br /> North Slope</td> \r\n <td >3/21/16</td>
+        \r\n <td >March to May <br /> 2016</td> \r\n <td >55</td> \r\n <td>Reduction
+        in work</td> \r\n </tr> \r\n <tr> \r\n <td><a href=\"/RR/notices/CH2M_WARN_notice.pdf\">CH2M</a></td>
+        \r\n <td >North Slope</td> \r\n <td >3/17/16</td> \r\n <td >3/31/16</td> \r\n
+        <td >58</td> \r\n <td>Loss of contract</td> \r\n </tr> \r\n <tr> \r\n <td><a
+        href=\"/RR/notices/Shell_01.16.pdf\">Shell</a></td> \r\n <td >Anchorage</td>
+        \r\n <td >1/27/16</td> \r\n <td >3/31/16</td> \r\n <td >75</td> \r\n <td>End
+        of exploration</td> \r\n </tr> \r\n <tr> \r\n <td><a href=\"/RR/notices/Walmart_01.16.pdf\">Walmart</a></td>
+        \r\n <td >Juneau</td> \r\n <td >1/15/16</td> \r\n <td >4/15/16</td> \r\n <td
+        >168</td> \r\n <td>Store closure</td> \r\n </tr> \r\n <tr> \r\n <td>ASRC Energy
+        Services</td> \r\n <td >Statewide</td> \r\n <td >11/10/15</td> \r\n <td >11/1/15
+        to 12/31/15</td> \r\n <td >134</td> \r\n <td>End of exploration</td> \r\n
+        </tr> \r\n <tr> \r\n <td>Doyon Universal Services LLC</td> \r\n <td >Anchorage/
+        <br /> North Slope</td> \r\n <td >5/10/13</td> \r\n <td >8/15/13</td> \r\n
+        <td >75</td> \r\n <td>Loss of contract</td> \r\n </tr> \r\n <tr> \r\n <td>TriWest
+        Healthcare Alliance Corp</td> \r\n <td >Statewide</td> \r\n <td >12/10/12</td>
+        \r\n <td >Varied</td> \r\n <td >31</td> \r\n <td>Loss of contract</td> \r\n
+        </tr> \r\n <tr> \r\n <td>CH2M Hill</td> \r\n <td >North Slope</td> \r\n <td
+        >12/20/12</td> \r\n <td >Varied</td> \r\n <td >380</td> \r\n <td>Loss of contracts</td>
+        \r\n </tr> \r\n <tr> \r\n <td>Williams Inc.</td> \r\n <td >Juneau</td> \r\n
+        <td >6/30/12</td> \r\n <td >9/2/12</td> \r\n <td >90</td> \r\n <td>Store closure</td>
+        \r\n </tr> \r\n <tr> \r\n <td>Hostess Brands, Inc.</td> \r\n <td >Statewide</td>
+        \r\n <td >5/4/12</td> \r\n <td >11/19/12</td> \r\n <td >90</td> \r\n <td>Company
+        closure</td> \r\n </tr> \r\n <tr> \r\n <td>United Parcel Services</td> \r\n
+        <td >Anchorage</td> \r\n <td >3/15/10</td> \r\n <td >various</td> \r\n <td
+        >109</td> \r\n <td>Restructuring</td> \r\n </tr> \r\n <tr> \r\n <td>NovaGold</td>
+        \r\n <td >Nome</td> \r\n <td >11/26/08</td> \r\n <td >11/28/08</td> \r\n <td
+        >130</td> \r\n <td> \r\n Lack of <br /> financing \r\n </td> \r\n </tr> \r\n
+        <tr> \r\n <td>Agrium U.S. Inc. Kenai Nitrogen Operations</td> \r\n <td >Kenai</td>
+        \r\n <td >9/26/07</td> \r\n <td >&nbsp;</td> \r\n <td >140</td> \r\n <td>Lack
+        of <br /> natural gas</td> \r\n </tr> \r\n <tr> \r\n <td>Arctec Services</td>
+        \r\n <td >Clear</td> \r\n <td >6/20/06</td> \r\n <td >9/30/06</td> \r\n <td
+        >171</td> \r\n <td>Loss of contract</td> \r\n </tr> \r\n <tr> \r\n <td>Chugach
+        Alutiiq Joint Venture</td> \r\n <td >Fort Greely</td> \r\n <td >5/30/06</td>
+        \r\n <td >6/1/06</td> \r\n <td >151</td> \r\n <td>Loss of contract</td> \r\n
+        </tr> \r\n <tr> \r\n <td> \r\n First Student \r\n </td> \r\n <td > \r\n Mat-Su
+        \r\n </td> \r\n <td > \r\n 4/10/06 \r\n </td> \r\n <td > \r\n 6/30/06 \r\n
+        </td> \r\n <td > \r\n 102 \r\n </td> \r\n <td> \r\n Loss of contract \r\n
+        </td> \r\n </tr> \r\n <tr> \r\n <td>Johnson's Tire Service, Inc.</td> \r\n
+        <td >Anchorage, <br /> Eagle River, <br /> Wasilla &amp; Soldotna</td> \r\n
+        <td >2/25/06</td> \r\n <td >4/1/06</td> \r\n <td >100</td> \r\n <td>Change
+        in ownership only</td> \r\n </tr> \r\n <tr> \r\n <td>&nbsp;</td> \r\n <td
+        >&nbsp;</td> \r\n <td >&nbsp;</td> \r\n <td >&nbsp;</td> \r\n <td >&nbsp;</td>
+        \r\n <td>&nbsp;</td> \r\n </tr> \r\n </tbody> \r\n </table> \r\n                        <p>*Date
+        of postmark</p>\r\n\t\t\t\t\t</article>\r\n\t\t\t\t\t<!-- end main Content
+        --> \r\n\t\t\t\t</main>\r\n\t\t\t\t<aside class=\"sidebar sidebar-primary
+        block-content-area\">\r\n\t\t\t\t\t<div class=\"sidebar-block sidebar_nav_menu\">\r\n\t\t\t\t\t
+        \r\n <h2 class=\"block-title\">Main menu</h2> \r\n <ul class=\"menu\"> \r\n
+        <li><a href=\"background.htm\">Background</a><a href=\"http://www.jobs.alaska.gov/ajb_cd/resumes.pdf\"></a></li>
+        \r\n <li><a href=\"questions.htm\">Frequently Asked Questions</a></li> \r\n
+        \ \r\n <li><a href=\"http://www.careeronestop.org/ReEmployment/\">One-stop
+        Reemployment Portal</a></li> \r\n <li><a href=\"resources.htm\">Layoff resources</a></li>
+        \r\n     </ul> \r\n  \r\n <h2 class=\"block-title\">Quick links</h2> \r\n
+        <ul class=\"menu\"> \r\n     <li><a href=\"https://jobs.alaska.gov/index.html\">Alaska
+        Job Center Network</a></li> \r\n     <li class=\"menu-item\"><a href=\"https://alaskajobs.alaska.gov/\">AlaskaJobs
+        website</a></li> \r\n       <li><a href=\"https://jobs.alaska.gov/RR/Documents/rr-layoff-guide.pdf\">Layoff
+        Guide</a></li> \r\n       <li><a href=\"https://jobs.alaska.gov/partners.htm\">Partner
+        sites </a></li> \r\n       <li><a href=\"https://jobs.alaska.gov/rr/lmi.htm\">Job/labor
+        \ market information</a></li> \r\n       </ul> \r\n  \r\n <h2 class=\"block-title\">Business</h2>
+        \r\n <ul class=\"menu\"> \r\n     <li><a href=\"business_info.htm\">Information</a></li>
+        \r\n     <li><a href=\"business_resources.htm\">Resources</a><a href=\"https://live.laborstats.alaska.gov/wage/index.cfm?at=01&a=000000\"></a></li>
+        \r\n </ul> \r\n  \r\n <h2 class=\"block-title\">WARN</h2> \r\n <ul class=\"menu\">
+        \r\n       <li><a href=\"WARN_info.htm\">Information</a></li> \r\n       <li><a
+        href=\"WARN_notices.htm\">WARN notices filed</a></li> \r\n       </ul> \r\n
+        \ \r\n <h2 class=\"block-title\">Worker</h2> \r\n <ul class=\"menu\"> \r\n
+        \      <li><a href=\"workers_info.htm\">Information</a></li> \r\n       <li><a
+        href=\"workers_resources.htm\">Resources</a></li> \r\n       </ul> \r\n  \r\n
+        </div> \r\n  \r\n  \r\n <section class=\"sidebar-block sidebar_nav_menu\"><h3
+        class=\"block-title\">Contact</h3> \r\n <p><a href=\"rrteam.htm\">Rapid Response
+        Team<br> \r\n </a>Email: <a href=\"mailto:dol.rrteam@alaska.gov\">dol.rrteam@alaska.gov</a></p>
+        \r\n </section> \r\n\r\n\t\t\t\t</aside>\r\n\t\t\t</div>\r\n\t\t\t<!-- /site-inner
+        -->\r\n\t\t\t<div class=\"footer-block footer\"  role=\"contentinfo\">\r\n\t\t\t\t<div
+        class=\"wrap\">\r\n\t\t\t\t\t<div class=\"footer-block-1 block-content-area\">\r\n\t\t\t\t\t\t<div
+        id=\"socialmedia-icons\" class=\"block socialmedia-icons\">\r\n\t\t\t\t\t\t\t<ul
+        class=\"alignleft\">\r\n\t\t\t\t\t\t\t\t<li class=\"social-facebook\"> <a
+        title=\"Follow the department on Facebook\" href=\"https://www.facebook.com/alaskalabor/\">
+        <img src=\"/images/facebook2.png\" alt=\"facebook link\" /> </a> </li>\r\n\t\t\t\t\t\t\t\t<li
+        class=\"social-twitter\"> <a title=\"Follow the department on Twitter\" href=\"https://twitter.com/AlaskaLabor\">
+        <img src=\"/images/twitter2.png\" alt=\"twitter link\" /> </a> </li>\r\n\t\t\t\t\t\t\t</ul>\r\n\t\t\t\t\t\t</div>\r\n\t\t\t\t\t\t<!--
+        /socialmedia-icons -->\r\n\t\t\t\t\t\t<div class=\"copyright\">\r\n\t\t\t\t\t\t\t<p>
+        <a href=\"https://doa.alaska.gov/ada/resources/web.html\"> Accessibility </a>
+        - <a href=\"https://labor.alaska.gov/oeo.htm\"> OEO Statement </a> - <br />\r\n\t\t\t\t\t\t\t<a
+        href=\"https://labor.alaska.gov/use.htm\"> Terms of Use </a> - <a href=\"https://labor.alaska.gov/privacy.htm\">
+        Privacy </a> - <a href=\"https://labor.alaska.gov/copyright.htm\"> Copyright
+        Info </a> </p>\r\n\t\t\t\t\t\t</div>\r\n\t\t\t\t\t</div>\r\n\t\t\t\t\t<!--
+        /footer-block-1 -->\r\n\t\t\t\t\t<div class=\"footer-block-2 block-content-area\">\r\n\t\t\t\t\t\t<div
+        class=\"wrap\">\r\n\t\t\t\t\t\t\t<p>&nbsp; </p>\r\n\t\t\t\t\t\t</div>\r\n\t\t\t\t\t</div>\r\n\t\t\t\t\t<!--
+        /footer-block-2 -->\r\n\t\t\t\t\t<div class=\"footer-block-3 block-content-area\">\r\n\t\t\t\t\t\t<p
+        class=\"dept-foot\"> Department of Labor &amp; Workforce Development </p>\r\n\t\t\t\t\t\t<p>
+        P.O. Box 111149 <br />\r\n\t\t\t\t\t\t\tJuneau, AK 99811 <br />\r\n\t\t\t\t\t\t\t<!--
+        (###) ###-#### -->\r\n\t\t\t\t\t\tFax: (907) 465-2784 </p>\r\n\t\t\t\t\t</div>\r\n\t\t\t\t\t<!--
+        footer-block-3 --> \r\n\t\t\t\t</div>\r\n\t\t\t\t<!-- /wrap footer-block footer
+        --> \r\n\t\t\t</div>\r\n\t\t\t<!-- /footer-block footer --> \r\n\t\t</div>\r\n\t\t<!--
+        /site-container -->\r\n\t\t<footer class=\"global-footer footer\">\r\n\t\t\t<div
+        class=\"inline-div\">\r\n\t\t\t\t<div id=\"SOAfooterlinks\" class=\"footer-global-nav-menu\">\r\n\t\t\t\t\t<ul
+        class=\"menu\">\r\n\t\t\t\t\t\t<li> <a href=\"https://www.alaska.gov\"> State
+        of Alaska </a> </li>\r\n\t\t\t\t\t\t<li> <a href=\"https://my.alaska.gov\">
+        myAlaska </a> </li>\r\n\t\t\t\t\t\t<li> <a href=\"https://www.alaska.gov/akdir1.html\">
+        Departments </a> </li>\r\n\t\t\t\t\t\t<li> <a href=\"https://www.alaska.gov/employeeHome.html\">
+        State Employees </a> </li>\r\n\t\t\t\t\t</ul>\r\n\t\t\t\t</div>\r\n\t\t\t\t<!--
+        /SOAfooterlinks -->\r\n\t\t\t\t<div class=\"copyright\">\r\n\t\t\t\t\t<p>
+        Copyright &copy; State of Alaska &middot; Department of Labor &amp; Workforce
+        Development &middot; <a href=\"mailto:labor.webmaster@alaska.gov\"> Email
+        Us </a> </p>\r\n\t\t\t\t</div>\r\n\t\t\t\t<!-- copyright --> \r\n\t\t\t</div>\r\n\t\t</footer>\r\n\t\t<!--
+        global-footer footer --> \r\n\t</div>\r\n\t<!-- background-wrap --> \r\n\t<script
+        \ src=\"/assets/jquery2.2.4.min.js\"></script> \r\n\t<script  src=\"/assets/assets.js\"></script>\r\n</body>\r\n</html>\r\n"
+    headers:
+      Accept-Ranges:
+      - bytes
+      Content-Length:
+      - '31044'
+      Content-Security-Policy-Report-Only:
+      - default-src 'self' https://widget.surveymonkey.com/  https://webcontent.alaska.gov
+        https://www.google-analytics.com  google.com data:;             script-src
+        'self' https://widget.surveymonkey.com/  https://www.google-analytics.com
+        https://ssl.google-analytics.com;            img-src 'self' https://secure.surveymonkey.com/
+        https://widget.surveymonkey.com/  https://ssl.google-analytics.com/ https://labor.alaska.gov
+        https://webcontent.alaska.gov/ https://jobs.alaska.gov  https://www.google-analytics.com
+        data:;            script-src-elem 'self'  https://www.surveymonkey.com/ https://widget.surveymonkey.com/
+        https://jobs.alaska.gov/ https://labor.alaska.gov/ https://www.google-analytics.com/
+        https://webcontent.alaska.gov https://www.googletagmanager.com https://ssl.google-analytics.com/
+        https://stackpath.bootstrapcdn.com/ ;             style-src 'self' https://widget.surveymonkey.com/
+        https://webcontent.alaska.gov 'unsafe-inline' ;             style-src-elem
+        'self'  'unsafe-inline' https://jobs.alaska.gov/apprentice/employers/ https://widget.surveymonkey.com/
+        https://webcontent.alaska.gov https://stackpath.bootstrapcdn.com/ https://use.fontawesome.com/;             font-src
+        https://webcontent.alaska.gov https://use.fontawesome.com/;             frame-src
+        'self' https://www.surveymonkey.com/ https://widget.surveymonkey.com/ https://player.vimeo.com/
+        https://www.google.com/;            report-to https://alaska.report-uri.com/r/d/csp/reportOnly;
+      Content-Type:
+      - text/html
+      Date:
+      - Sat, 05 Feb 2022 15:40:00 GMT
+      ETag:
+      - '"fec247a35518d81:0"'
+      Expect-CT:
+      - max-age=86400, enforce, report-uri="https://alaska.report-uri.com/r/d/ct/enforce"
+      Feature-Policy:
+      - accelerometer 'none';ambient-light-sensor 'none';autoplay 'none';camera 'none';encrypted-media
+        'none';fullscreen 'self';geolocation 'self';gyroscope 'none';magnetometer
+        'none';microphone 'none';midi 'none';payment 'self';picture-in-picture 'none';speaker
+        'self';sync-xhr 'none';usb 'none';vibrate 'none';vr 'none';
+      Last-Modified:
+      - Wed, 02 Feb 2022 16:55:09 GMT
+      Referrer-Policy:
+      - same-origin
+      Report-To:
+      - '{"group":"default","max_age":31536000,"endpoints":[{"url":"https://alaska.report-uri.com/a/d/g"}],"include_subdomains":true}'
+      Server:
+      - Microsoft-IIS
+      Strict-Transport-Security:
+      - max-age=15552000;
+      X-Content-Type-Options:
+      - nosniff
+      X-Frame-Options:
+      - DENY
+      X-XSS-Protection:
+      - 1; mode=block; report=https://alaska.report-uri.com/r/d/xss/enforce
+    status:
+      code: 200
+      message: OK
+version: 1
