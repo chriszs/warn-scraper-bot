@@ -85,26 +85,25 @@ jobs:
           git commit -m "${{ env.SCRAPER }} - ${timestamp}" || exit 0
           git push origin ${{ env.SCRAPER }}
 
-  combine:
-    needs: [scrapers,scrape]
-    if: always()
-
-    runs-on: ubuntu-latest
-
-    steps:
-      - name: Checkout combined branch
-        uses: actions/checkout@v2
-        with:
-          ref: combined
-      - name: Merge the branches
-        env:
-          SCRAPERS: ${{join(fromJson(needs.scrapers.outputs.scrapers), ' ')}}
-        run: |-
-          git config user.name "WARN scraper bot"
-          git config user.email "actions@users.noreply.github.com"
-          git config --global pull.rebase false
-          git pull origin ${{ env.SCRAPERS }}
-      - name: Push
-        run: |-
-          git push origin combined
-  
+#  combine:
+#    needs: [scrapers,scrape]
+#    if: always()
+#
+#    runs-on: ubuntu-latest
+#
+#    steps:
+#      - name: Checkout combined branch
+#        uses: actions/checkout@v2
+#        with:
+#          ref: combined
+#      - name: Merge the branches
+#        env:
+#          SCRAPERS: ${{join(fromJson(needs.scrapers.outputs.scrapers), ' ')}}
+#        run: |-
+#          git config user.name "WARN scraper bot"
+#          git config user.email "actions@users.noreply.github.com"
+#          git config --global pull.rebase false
+#          git pull origin ${{ env.SCRAPERS }}
+#      - name: Push
+#        run: |-
+#          git push origin combined
