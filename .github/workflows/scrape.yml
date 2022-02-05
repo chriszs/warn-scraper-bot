@@ -42,7 +42,7 @@ jobs:
       - name: Checkout data
         uses: actions/checkout@v2
         with:
-          ref: ${{ matrix.scraper }}
+          ref: combined
           path: data
       - name: Install pipenv
         run: pipx install pipenv
@@ -83,7 +83,7 @@ jobs:
           git add -A
           timestamp=$(date -u)
           git commit -m "${{ env.SCRAPER }} - ${timestamp}" || exit 0
-          git push origin ${{ env.SCRAPER }}
+          git push origin ${{ env.SCRAPER }} -f
 
   combine:
     needs: [scrapers,scrape]
