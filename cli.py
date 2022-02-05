@@ -47,10 +47,10 @@ def main(
     # Local logging config
     logging.basicConfig(level=log_level, format="%(asctime)s - %(name)s - %(message)s")
 
-    with vcr.use_cassette("data/cassettes/responses.yaml", record_mode=record_mode):
-        runner = Runner(data_dir, cache_dir)
+    runner = Runner(data_dir, cache_dir)
 
-        for scrape in scrapers:
+    for scrape in scrapers:
+        with vcr.use_cassette(f"data/cassettes/{scrape}.yaml", record_mode=record_mode):
             runner.scrape(scrape)
 
 

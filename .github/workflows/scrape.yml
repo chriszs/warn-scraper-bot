@@ -52,6 +52,11 @@ jobs:
         run: |
           rm -rf data/logs || true
           mkdir -p data/logs || true
+      - name: Move cassette
+        env:
+          SCRAPER: ${{ matrix.scraper }}
+        run: |
+          mv data/cassettes/responses.yaml data/cassettes/${{ env.SCRAPER }}.yaml || true
       - name: Replay scraping
         if: ${{ github.event_name == 'push' }}
         env:
