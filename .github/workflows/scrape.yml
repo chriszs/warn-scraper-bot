@@ -80,3 +80,21 @@ jobs:
           timestamp=$(date -u)
           git commit -m "${{ env.SCRAPER }} - ${timestamp}" || exit 0
           git push origin ${{ env.SCRAPER }}
+
+  combine:
+    needs: scrape
+
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout combined branch
+        uses: actions/checkout@v2
+        with:
+          ref: combined
+      - name: Merge the branches
+        run: |-
+          git pull origin ${{fromJson(needs.scrapers.outputs.scrapers)}}
+      - name: Push
+        run: |-
+          git push origin combined
+  
