@@ -20,7 +20,10 @@ jobs:
         with:
           python-version: '3.9'
           cache: 'pipenv'
-      - run: pipenv install
+      - name: Run pipenv install
+        run: |-
+          pipenv install
+          pipenv update warn-scraper
       - id: list
         name: List scrapers
         run: echo ::set-output name=scrapers::[\"$(pipenv run python cli.py --list | sed 's/,/","/g')\"]
@@ -47,7 +50,10 @@ jobs:
         with:
           python-version: '3.9'
           cache: 'pipenv'
-      - run: pipenv install
+      - name: Run pipenv install
+        run: |-
+          pipenv install
+          pipenv update warn-scraper
       - name: Clear logs
         run: |
           rm -rf data/logs || true
