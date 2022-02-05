@@ -63,7 +63,7 @@ jobs:
         env:
           SCRAPER: ${{ matrix.scraper }}
         run: |-
-          rm data/cassettes/${{ SCRAPER }}.yaml || true
+          rm data/cassettes/${{ env.SCRAPER }}.yaml || true
       - name: Scrape
         if: ${{ github.event_name == 'push' }}
         env:
