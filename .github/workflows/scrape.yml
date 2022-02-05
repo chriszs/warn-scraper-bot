@@ -98,7 +98,7 @@ jobs:
           ref: combined
       - name: Merge the branches
         env:
-          SCRAPERS: ${{fromJson(needs.scrapers.outputs.scrapers)}}
+          SCRAPERS: ${{join(fromJson(needs.scrapers.outputs.scrapers), ' ')}}
         run: |-
           git pull origin ${{ env.SCRAPERS }}
       - name: Push
