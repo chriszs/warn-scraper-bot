@@ -100,7 +100,7 @@ jobs:
         env:
           SCRAPERS: ${{join(fromJson(needs.scrapers.outputs.scrapers), ' ')}}
         run: |-
-          git config --global pull.ff only
+          git config --global pull.rebase false
           git pull origin ${{ env.SCRAPERS }}
       - name: Push
         run: |-
