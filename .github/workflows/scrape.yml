@@ -88,7 +88,8 @@ jobs:
           git push origin ${{ env.SCRAPER }}
 
   combine:
-    needs: scrape
+    needs: [scrapers,scrape]
+    if: always()
 
     runs-on: ubuntu-latest
 
@@ -98,8 +99,10 @@ jobs:
         with:
           ref: combined
       - name: Merge the branches
+        env:
+          SCRAPERS: ${{fromJson(needs.scrapers.outputs.scrapers)}}
         run: |-
-          git pull origin ${{fromJson(needs.scrapers.outputs.scrapers)}}
+          git pull origin ${{ env.SCRAPERS }}
       - name: Push
         run: |-
           git push origin combined
