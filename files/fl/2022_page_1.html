@@ -1,0 +1,234 @@
+
+<head>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link href="/Content/Site.css" rel="stylesheet" type="text/css" />
+    <link href="/Content/bootstrap.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.10.6/moment.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="/Scripts/jquery-3.3.1.min.js"></script>
+    <script src="/Scripts/jquery.validate.min.js"></script>
+
+</head>
+
+<br />
+<p align="center">
+    <font face="Arial Black" size="6">
+        2022 Worker Adjustment and Retraining Notification Notices
+    </font>
+</p>
+<br />
+
+<form action="/WarnList/Records" method="post">    <div class="container-fluid">
+        <div class="container">
+            <div class="panel panel-default" style="text-align: left">
+                <div class="panel-heading">
+                    <h3>Search</h3>
+                </div>
+
+                <div class="panel-body">
+                    <div class="row">
+                        <div class="col-xs-12 col-sm-12 col-md-2 col-lg-2  editor-label" style="text-align: right">
+                            <label for="CompanyName">Company Name</label>
+                        </div>
+                        <div class="col-xs-12 col-sm-12 col-md-2 col-lg-2 editor-field" style="text-align: left">
+                            <input class="text-box single-line" id="CompanyName" name="CompanyName" type="text" value="" />
+                            <input id="CompanyName" name="CompanyName" type="hidden" value="" />
+                            <input data-val="true" data-val-number="The field Year must be a number." data-val-required="The Year field is required." id="Year" name="Year" type="hidden" value="2022" year="2022" />
+                        </div>
+                        <div class="col-xs-12 col-sm-12 col-md-2 col-lg-2  editor-label" style="text-align: right">
+                            <label for="LWDB">LWDB</label>
+                        </div>
+                        <div class="col-xs-12 col-sm-12 col-md-2 col-lg-2 editor-field" style="text-align: left">
+                            <input class="text-box single-line" id="LWDB" name="LWDB" type="text" value="" />
+                            <input id="LWDB" name="LWDB" type="hidden" value="" />
+                        </div>
+                    </div>
+
+
+                    <br />
+                    <div class="row">
+                        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12" style="text-align: center">
+                            <button class="btn btn-primary" type="submit">Search</button>
+                            <input type="submit" value="Clear" class="btn btn-primary" id="btnClear" name="clearButton" />
+                        </div>
+                    </div>
+                </div>
+                <br />
+
+                <div id="DivGrid" style="text-align:center;">
+                            <div style="text-align:left;"><strong></strong> | 14 <label for="Record_s__found">Record(s) found</label></div>
+    <table class="PGrid" id="DataTable">
+    <thead>
+        <tr class="Header">
+            <th scope="col">
+<a href="/WarnList/Records?year=2022&amp;sort=CompanyName&amp;sortdir=ASC">Company Name</a>            </th>
+            <th scope="col">
+<a href="/WarnList/Records?year=2022&amp;sort=WARNReceivedByStateDate&amp;sortdir=ASC">State Notification Date</a>            </th>
+            <th scope="col">
+<a href="/WarnList/Records?year=2022&amp;sort=LayOffDate&amp;sortdir=ASC">Layoff Date</a>            </th>
+            <th scope="col">
+<a href="/WarnList/Records?year=2022&amp;sort=EmpAffected&amp;sortdir=ASC">Employees Affected</a>            </th>
+            <th scope="col">
+<a href="/WarnList/Records?year=2022&amp;sort=Industry&amp;sortdir=ASC">Industry</a>            </th>
+            <th scope="col">
+<a href="/WarnList/Records?year=2022&amp;sort=Attachment&amp;sortdir=ASC">Attachment</a>            </th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td><b>Shriners Healthcare for Children Florida</b> </br>12502 USF Pine Drive</br></br>TAMPA, FL, 33612</td>
+            <td>02-04-22</td>
+            <td>04-03-22</br><i> thru </i> </br>04-03-22</td>
+            <td>38</td>
+            <td>Health Care and Social Assistance</td>
+            <td><input type='button' id='download' value='Download' onclick='DownloadFile(0);' /><input type = 'hidden' id = 'FPath0' name = 'FPath0' value = 'H%3a%5cMYDOCUMENTS%5cShriners+Healthcare+for+Children+Florida-38+-+Tampa.pdf' /></td>
+        </tr>
+        <tr>
+            <td><b>MAXIMUS, Inc.</b> </br>Florida Healthy Kids Project</br>1203 Governo's Square Blvd., Suite 601</br>TALLAHASSEE, FL, 32301</td>
+            <td>02-01-22</td>
+            <td>03-31-22</br><i> thru </i> </br>03-31-22</td>
+            <td>4</td>
+            <td>Administrative and Support and Waste Management and Remediation Services</td>
+            <td><input type='button' id='download' value='Download' onclick='DownloadFile(1);' /><input type = 'hidden' id = 'FPath1' name = 'FPath1' value = 'H%3a%5cMYDOCUMENTS%5cMAXIMUS%2c+Inc.-Florida+Healthy+Kids+Project-100+-+Tallahassee+and+Ft.+Pierce.pdf' /></td>
+        </tr>
+        <tr>
+            <td><b>MAXIMUS, Inc.</b> </br>Florida Healthy Kids Project</br>2743 Peters Rd, Bay 33-34</br>FORT PIERCE, FL, 34945</td>
+            <td>02-01-22</td>
+            <td>03-31-22</br><i> thru </i> </br>03-31-22</td>
+            <td>96</td>
+            <td>Administrative and Support and Waste Management and Remediation Services</td>
+            <td><input type='button' id='download' value='Download' onclick='DownloadFile(2);' /><input type = 'hidden' id = 'FPath2' name = 'FPath2' value = 'H%3a%5cMYDOCUMENTS%5cMAXIMUS%2c+Inc.-Florida+Healthy+Kids+Project-100+-+Tallahassee+and+Ft.+Pierce.pdf' /></td>
+        </tr>
+        <tr>
+            <td><b>First Coast Security Services</b> </br>Statewide</br></br>STATEWIDE, FL, 00000</td>
+            <td>01-28-22</td>
+            <td>01-24-22</br><i> thru </i> </br>01-24-22</td>
+            <td>289</td>
+            <td>Administrative and Support and Waste Management and Remediation Services</td>
+            <td><input type='button' id='download' value='Download' onclick='DownloadFile(3);' /><input type = 'hidden' id = 'FPath3' name = 'FPath3' value = 'H%3a%5cMYDOCUMENTS%5cFirst+Coast+Security+Services-289+-+Statewide.pdf' /></td>
+        </tr>
+        <tr>
+            <td><b>BAYADA Home Health Care, Inc.</b> </br>Brandon State Programs</br>1727 S. Kings Avenue</br>BRANDON, FL, 33511</td>
+            <td>01-24-22</td>
+            <td>04-01-22</br><i> thru </i> </br>04-01-22</td>
+            <td>150</td>
+            <td>Health Care and Social Assistance</td>
+            <td><input type='button' id='download' value='Download' onclick='DownloadFile(4);' /><input type = 'hidden' id = 'FPath4' name = 'FPath4' value = 'H%3a%5cMYDOCUMENTS%5cBAYADA+Home+Health+Care%2c+Inc.-Assistive+Care+State+Program+Offices-682+-+Brandon%2c+Brooksville%2c+Port+Richey%2c+Clearwater+and+Remote+Office.pdf' /></td>
+        </tr>
+        <tr>
+            <td><b>BAYADA Home Health Care, Inc.</b> </br>Hernando County</br>20205 Cortez Blvd., Unit A</br>BROOKSVILLE, FL, 34601</td>
+            <td>01-24-22</td>
+            <td>04-01-22</br><i> thru </i> </br>04-01-22</td>
+            <td>306</td>
+            <td>Health Care and Social Assistance</td>
+            <td><input type='button' id='download' value='Download' onclick='DownloadFile(5);' /><input type = 'hidden' id = 'FPath5' name = 'FPath5' value = 'H%3a%5cMYDOCUMENTS%5cBAYADA+Home+Health+Care%2c+Inc.-Assistive+Care+State+Program+Offices-682+-+Brandon%2c+Brooksville%2c+Port+Richey%2c+Clearwater+and+Remote+Office.pdf' /></td>
+        </tr>
+        <tr>
+            <td><b>BAYADA Home Health Care, Inc.</b> </br>New Port Ritchie</br>7421 Ridge Road, Suite 105</br>PORT RICHEY, FL, 34668</td>
+            <td>01-24-22</td>
+            <td>04-01-22</br><i> thru </i> </br>04-01-22</td>
+            <td>144</td>
+            <td>Health Care and Social Assistance</td>
+            <td><input type='button' id='download' value='Download' onclick='DownloadFile(6);' /><input type = 'hidden' id = 'FPath6' name = 'FPath6' value = 'H%3a%5cMYDOCUMENTS%5cBAYADA+Home+Health+Care%2c+Inc.-Assistive+Care+State+Program+Offices-682+-+Brandon%2c+Brooksville%2c+Port+Richey%2c+Clearwater+and+Remote+Office.pdf' /></td>
+        </tr>
+        <tr>
+            <td><b>BAYADA Home Health Care, Inc.</b> </br>Pinellas County State Programs</br>13530 58th Street North, Suite 105</br>CLEARWATER, FL, 33760</td>
+            <td>01-24-22</td>
+            <td>04-01-22</br><i> thru </i> </br>04-01-22</td>
+            <td>79</td>
+            <td>Health Care and Social Assistance</td>
+            <td><input type='button' id='download' value='Download' onclick='DownloadFile(7);' /><input type = 'hidden' id = 'FPath7' name = 'FPath7' value = 'H%3a%5cMYDOCUMENTS%5cBAYADA+Home+Health+Care%2c+Inc.-Assistive+Care+State+Program+Offices-682+-+Brandon%2c+Brooksville%2c+Port+Richey%2c+Clearwater+and+Remote+Office.pdf' /></td>
+        </tr>
+        <tr>
+            <td><b>BAYADA Home Health Care, Inc.</b> </br>Orange Blossom Division</br>Remote Office</br>TAMPA, FL, 33647</td>
+            <td>01-24-22</td>
+            <td>04-01-22</br><i> thru </i> </br>04-01-22</td>
+            <td>3</td>
+            <td>Health Care and Social Assistance</td>
+            <td><input type='button' id='download' value='Download' onclick='DownloadFile(8);' /><input type = 'hidden' id = 'FPath8' name = 'FPath8' value = 'H%3a%5cMYDOCUMENTS%5cBAYADA+Home+Health+Care%2c+Inc.-Assistive+Care+State+Program+Offices-682+-+Brandon%2c+Brooksville%2c+Port+Richey%2c+Clearwater+and+Remote+Office.pdf' /></td>
+        </tr>
+        <tr>
+            <td><b>St. Mary's Medical Center</b> </br>Institute of Mental Health</br>901 45th Street</br>WEST PALM BEACH, FL, 33407</td>
+            <td>01-20-22</td>
+            <td>04-11-22</br><i> thru </i> </br>04-11-22</td>
+            <td>49</td>
+            <td>Health Care and Social Assistance</td>
+            <td><input type='button' id='download' value='Download' onclick='DownloadFile(9);' /><input type = 'hidden' id = 'FPath9' name = 'FPath9' value = 'H%3a%5cMYDOCUMENTS%5cSt.+Marys+Medical+Center-Institute+for+Mental+Health-49+-+West+Palm+Beach.pdf' /></td>
+        </tr>
+        <tr>
+            <td><b>MH Employment Services LLC</b> </br>Shelborne South Beach Hotel</br>1801 Collins Avenue</br>MIAMI BEACH, FL, 33139</td>
+            <td>01-10-22</td>
+            <td>03-08-22</br><i> thru </i> </br>03-08-22</td>
+            <td>88</td>
+            <td>Accommodation and Food Services</td>
+            <td><input type='button' id='download' value='Download' onclick='DownloadFile(10);' /><input type = 'hidden' id = 'FPath10' name = 'FPath10' value = 'H%3a%5cMYDOCUMENTS%5cMH+Employment+Services+LLC-Shelborne+South+Beach+-+Miami+Beach.pdf' /></td>
+        </tr>
+        <tr>
+            <td><b>PAE</b> </br>Shared Services LLC, Atlantic Undersea Test and Evaluation Center</br>801 Clematis Street, Suite 1</br>WEST PALM BEACH, FL, 33401</td>
+            <td>01-03-22</td>
+            <td>02-04-22</br><i> thru </i> </br>02-04-22</td>
+            <td>80</td>
+            <td>Administrative and Support and Waste Management and Remediation Services</td>
+            <td><input type='button' id='download' value='Download' onclick='DownloadFile(11);' /><input type = 'hidden' id = 'FPath11' name = 'FPath11' value = 'H%3a%5cMYDOCUMENTS%5cPAE-89+-+West+Palm+Beach-87+and+Cape+Canaveral-2.pdf' /></td>
+        </tr>
+        <tr>
+            <td><b>PAE</b> </br>Shared Services LLC, Atlantic Undersea Test and Evaluation Center</br>1624 Perimeter Rd.</br>WEST PALM BEACH, FL, 33406</td>
+            <td>01-03-22</td>
+            <td>02-04-22</br><i> thru </i> </br>02-04-22</td>
+            <td>7</td>
+            <td>Administrative and Support and Waste Management and Remediation Services</td>
+            <td><input type='button' id='download' value='Download' onclick='DownloadFile(12);' /><input type = 'hidden' id = 'FPath12' name = 'FPath12' value = 'H%3a%5cMYDOCUMENTS%5cPAE-89+-+West+Palm+Beach-87+and+Cape+Canaveral-2.pdf' /></td>
+        </tr>
+        <tr>
+            <td><b>PAE</b> </br>Shared Services LLC, Atlantic Undersea Test and Evaluation Center</br>Cape Canaveral Air Force Station, Warehouse Rd., Bldg. 1063 Door E</br>CAPE CANAVERAL, FL, 32920</td>
+            <td>01-03-22</td>
+            <td>02-04-22</br><i> thru </i> </br>02-04-22</td>
+            <td>2</td>
+            <td>Administrative and Support and Waste Management and Remediation Services</td>
+            <td><input type='button' id='download' value='Download' onclick='DownloadFile(13);' /><input type = 'hidden' id = 'FPath13' name = 'FPath13' value = 'H%3a%5cMYDOCUMENTS%5cPAE-89+-+West+Palm+Beach-87+and+Cape+Canaveral-2.pdf' /></td>
+        </tr>
+    </tbody>
+    </table>
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+</form><script type="text/javascript">
+    function DownloadFile(fileNo) {
+
+        var FileNumber = "FPath" + fileNo;
+        var fileName = $('input[name="'+FileNumber+'"]').val();
+        var filedata = new FormData();
+        //alert(fileName);
+        filedata.append("file", fileName);
+
+        $.ajax({
+            url: '/WarnList/Download',
+            type: "POST",
+            contentType: false,
+            processData: false,
+            data: filedata,
+            success: function (successValue)
+            {
+                //alert(successValue.responseText);
+                //alert(successValue.exactFileName);
+
+                if (successValue.success) {
+                    window.location = '/WarnList/DownloadAzureFile?file=' + successValue.exactFileName;
+                }
+                else {
+                    alert(successValue.responseText);
+                }
+            }
+        });
+    }
+</script>]
