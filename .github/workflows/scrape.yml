@@ -58,21 +58,19 @@ jobs:
         run: |
           rm -rf data/logs || true
           mkdir -p data/logs || true
-      - name: Replay scraping
+      - name: Clear the cassettes
+        if: ${{ github.event_name != 'push' }}
+        env:
+          SCRAPER: ${{ matrix.scraper }}
+        run: |-
+          rm data/cassettes/${{ SCRAPER }}.yaml || true
+      - name: Scrape
         if: ${{ github.event_name == 'push' }}
         env:
           SCRAPER: ${{ matrix.scraper }}
           LOGLEVEL: DEBUG
         run: |-
           pipenv run python cli.py ${{ env.SCRAPER }}
-          ! cp /home/runner/.warn-scraper/logs/* data/logs/
-      - name: Live scrape
-        if: ${{ github.event_name != 'push' }}
-        env:
-          SCRAPER: ${{ matrix.scraper }}
-          LOGLEVEL: DEBUG
-        run: |-
-          pipenv run python cli.py ${{ env.SCRAPER }} --record-mode all
           ! cp /home/runner/.warn-scraper/logs/* data/logs/
       - name: Commit and push
         env:
